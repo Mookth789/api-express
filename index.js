@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3010;
 const path = require('path');
+const mongoose = require('mongoose');
 
 app.use(express.static('static'));
 
