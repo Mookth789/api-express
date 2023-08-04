@@ -13,3 +13,17 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+mongoose.connect('mongodb+srv://app-gm:app-gm@app-gm.0c6hzoe.mongodb.net/'),
+function checkDB(err)
+{
+if(err)
+{
+  console.log("Erroe DB");
+
+}
+else
+{
+  console.log("DB connected")
+}
+};
